@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kuis/riwayatpes.dart';
 
+// 2205714 Raya Cahya Nurani & 2206000 Septiani Eka Putri
+
 void main() {
   runApp(statusPesanan());
 }

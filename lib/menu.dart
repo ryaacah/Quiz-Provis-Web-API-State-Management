@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:kuis/keranjang.dart';
 
+// 2205714 Raya Cahya Nurani & 2206000 Septiani Eka Putri
+
 void main() {
   runApp(Menu());
 }

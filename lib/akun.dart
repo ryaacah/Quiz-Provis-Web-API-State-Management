@@ -3,6 +3,8 @@ import 'package:kuis/homepage.dart';
 import 'package:kuis/login.dart';
 import 'package:kuis/riwayatpes.dart';
 
+// 2205714 Raya Cahya Nurani & 2206000 Septiani Eka Putri
+
 class Akun extends StatelessWidget {
   final String loggedInUsername;
 

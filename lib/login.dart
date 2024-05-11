@@ -4,6 +4,8 @@ import 'package:kuis/akun.dart';
 import 'package:kuis/homepage.dart';
 import 'package:kuis/service/auth_service.dart';
 
+// 2205714 Raya Cahya Nurani & 2206000 Septiani Eka Putri
+
 void main() {
   runApp(Login());
 }

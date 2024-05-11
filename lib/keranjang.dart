@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:kuis/menu.dart';
 import 'package:kuis/pembayaran.dart';
 
+// 2205714 Raya Cahya Nurani & 2206000 Septiani Eka Putri
+
 class Keranjang extends StatelessWidget {
   final Map<String, int> itemCountMap; // Tambahkan parameter itemCountMap
 

@@ -6,6 +6,8 @@ import 'package:kuis/menu.dart';
 import 'package:kuis/riwayatpes.dart';
 import 'package:kuis/voucher.dart';
 
+// 2205714 Raya Cahya Nurani & 2206000 Septiani Eka Putri
+
 void main() {
   runApp(Homepage());
 }
@@ -68,16 +70,16 @@ class _MyHomePageState extends State<HomePage> {
         actions: [
           IconButton(
             icon: Icon(Icons.shopping_cart),
-            onPressed: () {         
+            onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Keranjang(itemCountMap: {},)), // Navigasi ke halaman detail
+                MaterialPageRoute(builder: (context) => Keranjang(itemCountMap: {},)),
               );
             },
           ),
         ],
       ),
-      body: SingleChildScrollView( // Tambahkan widget SingleChildScrollView di sini
+      body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -89,7 +91,7 @@ class _MyHomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.network(
                       imageUrl,
-                      width: 300, // Ubah ukuran lebar gambar di sini
+                      width: 300,
                       height: 150,
                       fit: BoxFit.cover,
                     ),
@@ -122,6 +124,20 @@ class _MyHomePageState extends State<HomePage> {
                   ),
                 );
               }).toList(),
+            ),
+            SizedBox(height: 20),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '2205714 Raya Cahya Nurani & 2206000 Septiani Eka Putri',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 8),
+              ],
             ),
             SizedBox(height: 20),
             Row(
@@ -220,7 +236,6 @@ class _MyHomePageState extends State<HomePage> {
               ],
             ),
             SizedBox(height: 20),
-            // Baris baru untuk icon restoran dan teks 'Menu'
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -238,11 +253,11 @@ class _MyHomePageState extends State<HomePage> {
                 ),
                 GestureDetector(
                   onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => Menu()),
-                        );
-                      },
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Menu()),
+                    );
+                  },
                   child: Row(
                     children: [
                       Text(
@@ -260,7 +275,6 @@ class _MyHomePageState extends State<HomePage> {
               ],
             ),
             SizedBox(height: 20),
-            // Galeri gambar yang bisa digulir
             SizedBox(
               height: 120,
               child: ListView.builder(
@@ -282,7 +296,7 @@ class _MyHomePageState extends State<HomePage> {
                 },
               ),
             ),
-            SizedBox(height: 100), // Menambahkan jarak di bagian bawah untuk memberi ruang bagi bottomNavigationBar
+            SizedBox(height: 100),
           ],
         ),
       ),
@@ -298,11 +312,11 @@ class _MyHomePageState extends State<HomePage> {
                 IconButton(
                   icon: Icon(Icons.home_outlined, color: Color(0xFF7469B6)),
                   onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => HomePage()),
-                        );
-                      },
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                    );
+                  },
                 ),
                 Text('Home'),
               ],
@@ -315,7 +329,7 @@ class _MyHomePageState extends State<HomePage> {
                   onPressed: () {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => SedangBerjalan()), 
+                      MaterialPageRoute(builder: (context) => SedangBerjalan()),
                     );
                   },
                 ),
@@ -330,7 +344,7 @@ class _MyHomePageState extends State<HomePage> {
                   onPressed: () {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => Akun(loggedInUsername: '')), 
+                      MaterialPageRoute(builder: (context) => Akun(loggedInUsername: '')),
                     );
                   },
                 ),
